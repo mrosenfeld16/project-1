@@ -1,0 +1,38 @@
+import turtle
+
+turtle.title("My Turtle Game")
+turtle.bgcolor("grey")
+turtle.setup(600,600)
+turtle.shape("turtle")
+
+screen = turtle.Screen()
+
+def draw_square(some_turtle):
+  for _ in range(4):
+    some_turtle.forward(200)
+    some_turtle.right(90)
+    
+def draw_art():
+  turtle1 = turtle.Turtle(shape="turtle")
+  turtle1.color("yellow")
+  turtle1.pensize(2)
+  turtle1.speed("normal")
+  
+  for _ in range(36):
+    draw_square(turtle1)
+    turtle1.right(10)
+    
+  angie = turtle.Turtle(shape="turtle")
+  angie.color("blue")
+  angie.pensize(2)
+  angie.speed(5)
+  
+  size = 1
+  
+  for _ in range(300):
+    angie.forward(size)
+    angie.right(91)
+    size += 1
+    
+    draw_art()
+    turtle.done()

@@ -1,0 +1,63 @@
+use for corresponding numbers + letters to transfer between data types before the corresponding thing
+
+str = string = letters or words
+int = integers = whole numbers, negatives, or 0
+float = float = decimal numbers
+
+print('x') will print whatever x is onto the screen for the user to see. Print function also called the concatenation operator
+
+escape characters, use after backslash in quotations for print commands
+n= new line
+b= backspace
+f= form feed
+r= return
+t= tab
+v= vertical tab
+
+to get information from the user use an input statement such as - inp = input("What?") - 
+
+for lists use square brackets: [], first in list is position 0, last is -1. the middle are ascending and descending accordingly. LISTS USE []
+"list name".append('x') will insert x at end of list
+"list name".insert(position y,' x') will insert x into position y
+"list name".remove('x') will remove x from wherever it is in your list
+del "list name"[position y] will remove whatever is in position y from your list
+"list name".pop(position y) will take whatever was in postion y out of your list and will immediatly make it available to use.
+"listname".sort() will sort your list into alphabetical order, permanent change cannot be undone with a command.
+"listname".sorted() will temporarily sort your list to alphabetical order. to undo just type "listname" again
+"listname".reverse will permanently change your list to reverse order, so first will be last and vice versa along with everything in between
+len("list name") will tell you how long your list is, you can also define
+cats[:] will copy your list. define this as a variable and you will have two of the same list
+
+tuples are a different kind of collection type similar to a list, but stuff inside cannot be changed, still use square brackets, still first position is 0. TUPLES USE ()
+
+reserved keywords cannot be used as variables: len, length, for, range, def
+
+loops
+for loop: example when cats = ['sammy', 'franklin', 'solomon']: for cat in cats:
+... print(cat)
+...
+sammy
+franklin
+solomon
+you can add any phrase or other in parenthesis with cat in '', and it will put that phrase with each piece of list
+
+while loop: setting a loop to run until x changes into y. 
+ex: 
+a = 5. 
+while a > 0:
+  print(a)
+  a = a - 1
+
+
+slicing: "list name"[position y:position z] first number is inclusive, second is exclusive
+if you define this as a variable, the variable becomes a seperate list and can have all list operations done to it.
+if you want your slice to start at beginning of your list, then do not add a first number, just the colon and the second number
+if you want it to go all the way to the end, than you only add the first number before the colon.
+if you want a copy of your list then you can just include the colon and then you can do one thing to one list and another to the other.
+
+DICTIONARIES USE {}
+dictionary = {'health': 100,}
+
+import is a way of bringing code from a different area into your current project, can use all functions in current project
+
+break command will stop everthing from running, will essentially break the coding until you run again

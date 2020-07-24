@@ -1,0 +1,48 @@
+import random
+
+
+
+tries = 5
+Win = False
+Play = True
+
+while Play == True:
+  rand = random.randint(0,10)
+  while tries > 0:
+    guess = input('Enter a number between 0-10)
+    guess = int(guess)
+
+    if (guess < 0 or guess > 10):
+      print('Seriously?')
+      break
+    else:
+      if guess > rand:
+        print('Number too big')
+        tries = tries - 1
+        print('You have ' + str(tries) + ' tries left')
+        if rand - guess == 1:
+          print('1 number off')
+        elif guess < rand:
+          print('Number too small')
+          tries = tries - 1
+          print('You have ' + str(tries) + ' tries left')
+          if rand - guess == 1:
+            print('1 number off')
+         else:
+          Win = True
+          break
+  if Win == True:
+    print('Congratulations!')
+  else:
+    print('No more tries left')
+    print('The number was: ' + str(rand))
+  answer = input('Do you want to play again? Y/N')
+  if answer.upper() == 'N':
+    print('Thanks for playing!')
+    Play = False
+  else:
+    win = False
+    tries = 5
+
+      
+          

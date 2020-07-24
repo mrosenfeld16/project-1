@@ -1,0 +1,4 @@
+hi = input("What is your name?")
+
+if hi == 'Madeleine':
+  print("Hi Madeleine")

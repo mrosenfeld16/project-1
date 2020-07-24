@@ -1,0 +1,37 @@
+score = 50
+
+health = 10
+
+name = input('What is your name? \n')
+ans = input('Hi ' + name + ', do you want to play an animal trivia game? Y or N? \n')
+
+if ans == 'N':
+  print('TOO BAD\n')
+
+print('Your starting score is 50, your starting health is 10\n')
+
+Q1 = input('Is a spider an insect? Y or N\n')
+Q1 = Q1.upper()
+if Q1 == "Y":
+  print('Sorry, you are wrong. Your score is now 45 and health is now 9\n')
+  score = 45
+  health = 9  
+elif Q1 ==  'N':
+  print('Congratulations ' + name + ' you are correct. Your score is now 55, your health stays at 10\n')
+  score = 55
+  health = 10
+
+Q2 = input('There is a type of immortal jellyfish. T or F.\n')
+Q2 = Q2.upper()
+if Q2 == 'T':
+  print('Yay ' + name + ' You got it right! Your score is ' + score + ' and your health is ' + health)
+  score = score + 5
+  if health < 10:
+    health = health + 1
+elif Q2 == 'F':
+  score = score - 5
+  health = health - 1
+  print('Sorry, you are wrong. Your score is now ' + score + 'and your health is ' + health)
+
+
+   

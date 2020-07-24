@@ -1,0 +1,23 @@
+heroes = {"AAA" : "Wonder Woman",
+          "AAB" : "Spider-Man",
+          "ABA" : "Black Panther",
+          "ABB" : "Cat Woman",
+          "BBB" : "Black Widow",
+          "BBA" : "Green Ivy",
+          "BAB" : "Harley Quinn",
+          "BAA" : "Phoenix"}
+
+name = input('What is your name? ')
+ans = input('Hi ' + name + ', do you want to play a game? Y or N? ')
+
+if ans.upper() == 'Y':
+  Q1 = input("What is worse, A for spiders or B for millipedes? Answer A or B. ")
+  Q1 = Q1.upper()
+  Q2 = input("Which is better, A for ice cream, or B for doughnuts? Answer A or B. But really. We all know you're going to answer B. DOUGHNUTS ARE FAR SUPERIOR. ")
+  Q2 = Q2.upper()
+  Q3 = input('Which is better: A for cats, or B for dogs? Answer A or B ')
+  Q3 = Q3.upper()
+
+  var = Q1 + Q2 + Q3
+
+print(name + ", Your favorite superhero is " + heroes[var])
